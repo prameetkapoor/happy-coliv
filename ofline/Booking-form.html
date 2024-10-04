@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking From</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+        <!-- <style>
+
+.button {
+  position: sticky;
+  border: 3px solid #00000047;
+  color: #323232;
+  width: 300px;
+  margin-left: 0;
+  margin-top: 10px;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: larger;
+}
+
+.button:hover {
+  box-shadow: 5px 3px 0 #ffea0087, 10px 6px 0 #00000037;
+    
+  border-style: solid;
+  border-color: #000000;
+}
+
+
+       </style> -->
+</head>
+<body >
+
+    <nav class="navbar">
+
+
+        <ul  class="nav-menu">
+            <div class="nav-image-container" style="margin-left: -20px;">
+                <img src="./images/logo.png" style="margin-left: 50px; margin-top: 10px;" class="nav-item" alt="" onclick="window.location.href='index.html'">
+              </div>
+              <a href="index.html" class="nav-item">
+                <li>
+                    Home</li>
+            </a>
+            <a href="yoliv-properties.html" class="nav-item"><li>
+                Explore</li></a>
+            <a href="about-us.html" class="nav-item"><li>
+                About us</li></a>
+                <a href="contact-us.html" class="nav-item"><li>
+                    Contact us</li></a>
+                    <a href="reviews.html" class="nav-item"><li>
+                        Reviews</li></a>
+        </ul>
+
+
+
+        
+            <div class="button-parrot">
+                <button class="book-button" onclick="window.location.href='Booking-form.html'">Enquire now!
+                <!-- <div class="parrot"></div>
+                <div class="parrot"></div>
+                <div class="parrot"></div>
+                <div class="parrot"></div>
+                <div class="parrot"></div>
+                <div class="parrot"></div> -->
+                </button>
+
+
+            
+            </div>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="mobile-logo" >
+            <img src="./images/logo.png" alt="" class="nav-item" onclick="window.location.href='index.html'">
+            </div>
+    </nav>
+    <!-- style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.367))" -->
+    <main >
+        <section id="booking-form">
+            <form class="form" action="https://formspree.io/f/mleqzaaa"
+            method="POST">
+                <div class="title" style="font-size: 34px; font-family: 'Plus Jakarta Sans', sans-serif;">Book A Slot<br><span style="font-size: 20px; text-align: center; ">Fill the details</span></div>
+                <input type="text" placeholder="Name" name="name" class="input" required>
+                <input type="email" placeholder="Email" name="email" class="input" required>
+                <input type="tel" name="phone" pattern="\d{10}" required class="input" placeholder="Phone No.">
+                <input type="date" placeholder="pick a date" name="date" class="input" required>
+                <select id="country" name="country" required>
+                    <option value="">Select a PG</option>
+                    <option value="Nova, Navrangpura">Nova, Navrangpura</option>
+                    <option value="Nebula, Satellite">Nebula, Satellite</option>
+                    <option value="Astrum, Ambawadi">Astrum, Ambawadi</option>
+                    <option value="Galaxy, Navrangpura">Galaxy, Navrangpura</option>
+                    <option value="Paladi PG, Paladi">Aura, Paldi</option>
+                  </select>
+                <textarea name="message" rows="4" placeholder="Message"></textarea>
+                
+          
+                <button class="button type1" type="submit">
+                        <span class="btn-txt">submit</span>
+                      </button>
+              </form>
+        </section>
+    </main>
+
+   
+    <footer>
+        <div style="display: flex; gap: 100px;height: 20vh;">
+            <img class="logo" src="./images/logo1.png" alt="">
+
+            <div class="footer-nav-links">
+                <a href="yoliv-properties.html">Explore</a>
+                <a href="about-us.html">About us</a>
+                <a href="contact-us.html">Contact us</a>
+            <a href="reviews.html">Reviews</a> 
+
+
+            </div>
+
+            <div class="social-media-links">
+                <a href="https://www.instagram.com/yolivcommunity/"><img src="./images/instagram.png" alt=""></a>
+                <!-- <a href="#"><img src="./images/linkedin.png" alt=""></a>  -->
+                <a href="https://m.facebook.com/profile.php?id=61555428601984&eav=AfZj3IKAxIDb-lDq_he1ghXjshDWBMi5RG3qUb4-h2JGVcXUb5kX7bGREFqyojufEcU&paipv=0"><img src="./images/facebook.png" alt=""></a>
+                <!-- <a href="#"><img src="./images/twitter.png" alt=""></a> -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      
+      hamburger.addEventListener("click", mobileMenu);
+      
+      function mobileMenu() {
+       hamburger.classList.toggle("active");
+       navMenu.classList.toggle("active");
+      }
+      
+      const navLink = document.querySelectorAll(".nav-link");
+      
+      navLink.forEach(n => n.addEventListener("click", closeMenu));
+      
+      function closeMenu() {
+       hamburger.classList.remove("active");
+       navMenu.classList.remove("active");
+      }
+      
+      </script>
+
+</body>
+</html>

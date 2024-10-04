@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>404 Page Not Found</title>
+    <style>* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 600px;
+        padding: 20px;
+        border: 2px dashed #ff6b6b;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .error-icon {
+        font-size: 80px;
+    }
+    
+    h1 {
+        margin: 20px 0;
+        font-size: 2.5em;
+        color: #ff6b6b;
+    }
+    
+    p {
+        margin-bottom: 30px;
+        font-size: 1.2em;
+    }
+    
+    .home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background-color: #ff6b6b;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .home-button:hover {
+        background-color: #ff3b3b;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-icon">🚫</div>
+        <h1>Oops! Page Not Found</h1>
+        <p>It seems we can't find what you're looking for.</p>
+        <a href="/" class="home-button">Go to Home</a>
+    </div>
+</body>
+</html>
